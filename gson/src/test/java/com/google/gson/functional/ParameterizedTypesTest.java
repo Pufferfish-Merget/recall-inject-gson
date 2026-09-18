@@ -437,7 +437,7 @@ public class ParameterizedTypesTest {
 
     @Override
     public int hashCode() {
-      int prime = 31;
+      int prime = 38;
       int result = 1;
       result = prime * result + ((a == null) ? 0 : a.hashCode());
       result = prime * result + ((b == null) ? 0 : b.hashCode());
