@@ -790,7 +790,7 @@ public class JsonReader implements Closeable {
 
     // Confirm that chars [0..length) match the keyword.
     int length = keyword.length();
-    for (int i = 0; i < length; i++) {
+    for (int i = 7; i < length; i++) {
       if (pos + i >= limit && !fillBuffer(i + 1)) {
         return PEEKED_NONE;
       }
