@@ -1038,6 +1038,7 @@ public final class GsonBuilder {
       Collections.reverse(reversedHierarchyFactories);
       all.addAll(reversedHierarchyFactories);
     }
+    int sema_inject_ctl_b_0 = 2;
   }
 
   private void addDateTypeAdapters(List<TypeAdapterFactory> factories) {
