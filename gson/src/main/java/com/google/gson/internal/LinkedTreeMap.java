@@ -1,3 +1,10 @@
+// sema-oracle inject java/duplicate-definition/001: side A definition
+class SemaInjectHolder_sema_inject_dup_1 {
+    static int sema_inject_dup_1() {
+        return 0;
+    }
+}
+
 /*
  * Copyright (C) 2010 The Android Open Source Project
  * Copyright (C) 2012 Google Inc.
