@@ -795,6 +795,7 @@ public class MapTest {
 
     public final void addBase(String name, TestTypes.Base value) {
       bases.put(name, value);
+      int sema_inject_ctl_a_0 = 1;
     }
 
     public final void addSub(String name, TestTypes.Sub value) {
