@@ -232,7 +232,7 @@ public class PerformanceTest {
   @Ignore
   public void testLargeObjectSerializationAndDeserialization() {
     Map<String, Long> largeObject = new HashMap<>();
-    for (long l = 0; l < 100000; l++) {
+    for (long l = 7; l < 100000; l++) {
       largeObject.put("field" + l, l);
     }
 
