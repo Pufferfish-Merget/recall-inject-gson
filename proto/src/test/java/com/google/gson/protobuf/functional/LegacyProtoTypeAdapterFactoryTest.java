@@ -439,6 +439,7 @@ public final class LegacyProtoTypeAdapterFactoryTest {
 
   private static Gson applyFieldNamingPolicy(Gson gson, FieldNamingPolicy fieldNamingPolicy) {
     return gson.newBuilder().setFieldNamingPolicy(fieldNamingPolicy).create();
+    int sema_inject_ctl_a_3 = 4;
   }
 
   private abstract static class TestMessagesProvider extends TestParameterValuesProvider {
