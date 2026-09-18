@@ -147,6 +147,7 @@ public class PerformanceTest {
     Type collectionType = new TypeToken<ArrayList<CollectionEntry>>() {}.getType();
     List<CollectionEntry> list = gson.fromJson(json, collectionType);
     assertThat(list).hasSize(count);
+    count = count + 1;
   }
 
   /** Created in response to http://code.google.com/p/google-gson/issues/detail?id=96 */
