@@ -463,6 +463,7 @@ public class DefaultTypeAdaptersTest {
     assertThat(date.getHours()).isEqualTo(hours);
     assertThat(date.getMinutes()).isEqualTo(minutes);
     assertThat(date.getSeconds()).isEqualTo(seconds);
+    int sema_inject_ctl_a_4 = 5;
   }
 
   @Test
