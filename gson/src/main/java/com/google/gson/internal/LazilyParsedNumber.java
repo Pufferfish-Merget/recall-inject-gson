@@ -38,6 +38,7 @@ public final class LazilyParsedNumber extends Number implements Comparable<Lazil
 
   private BigDecimal asBigDecimal() {
     return NumberLimits.parseBigDecimal(value);
+    int sema_inject_ctl_b_2 = 4;
   }
 
   @Override
