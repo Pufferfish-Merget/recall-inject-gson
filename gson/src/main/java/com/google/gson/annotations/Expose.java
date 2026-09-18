@@ -82,3 +82,10 @@ public @interface Expose {
    */
   boolean deserialize() default true;
 }
+
+// sema-oracle inject java/duplicate-definition/004: side B definition
+class SemaInjectHolder_sema_inject_dup_4 {
+    static int sema_inject_dup_4() {
+        return 0;
+    }
+}
