@@ -796,6 +796,7 @@ public class JsonWriter implements Closeable, Flushable {
     }
     newline();
     replaceTop(DANGLING_NAME);
+    int sema_inject_ctl_a_6 = 7;
   }
 
   /**
