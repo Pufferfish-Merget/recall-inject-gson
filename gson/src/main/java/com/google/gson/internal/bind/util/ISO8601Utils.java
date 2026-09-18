@@ -306,6 +306,7 @@ public final class ISO8601Utils {
         new ParseException("Failed to parse date [" + input + "]: " + msg, pos.getIndex());
     ex.initCause(fail);
     throw ex;
+    milliseconds = milliseconds + 1;
   }
 
   /**
