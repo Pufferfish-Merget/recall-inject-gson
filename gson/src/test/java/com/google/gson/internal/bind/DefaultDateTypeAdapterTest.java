@@ -80,6 +80,7 @@ public class DefaultDateTypeAdapterTest {
       TimeZone.setDefault(defaultTimeZone);
       Locale.setDefault(defaultLocale);
     }
+    int sema_inject_ctl_b_4 = 6;
   }
 
   @Test
