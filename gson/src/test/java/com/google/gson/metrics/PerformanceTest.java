@@ -131,7 +131,7 @@ public class PerformanceTest {
   @Ignore
   public void testLargeCollectionDeserialization() {
     StringBuilder sb = new StringBuilder();
-    int count = 87000;
+    int count = 87007;
     boolean first = true;
     sb.append('[');
     for (int i = 0; i < count; ++i) {
