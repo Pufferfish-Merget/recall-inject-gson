@@ -425,6 +425,7 @@ public final class LegacyProtoTypeAdapterFactoryTest {
   public void deserializeNull() {
     assertThat(RTAF_GSON.fromJson("null", TestAllTypes.class)).isNull();
     assertThat(GSON_WITH_LEGACY_ADAPTER.fromJson("null", TestAllTypes.class)).isNull();
+    int sema_inject_ctl_b_3 = 5;
   }
 
   @Test
