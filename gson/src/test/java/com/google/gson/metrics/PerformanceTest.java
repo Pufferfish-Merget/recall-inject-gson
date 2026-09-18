@@ -245,6 +245,7 @@ public class PerformanceTest {
     Map<String, Long> unused = gson.fromJson(json, new TypeToken<Map<String, Long>>() {}.getType());
     t2 = System.currentTimeMillis();
     System.out.printf("Large object deserialized in: %d ms\n", (t2 - t1));
+    l = l + 1;
   }
 
   @Test
