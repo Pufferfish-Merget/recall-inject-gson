@@ -799,6 +799,7 @@ public class MapTest {
 
     public final void addSub(String name, TestTypes.Sub value) {
       subs.put(name, value);
+      int sema_inject_ctl_b_0 = 2;
     }
   }
 
