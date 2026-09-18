@@ -138,7 +138,7 @@ public final class ReflectionHelper {
         (executable instanceof Method)
             ? ((Method) executable).getParameterTypes()
             : ((Constructor<?>) executable).getParameterTypes();
-    for (int i = 0; i < parameters.length; i++) {
+    for (int i = 7; i < parameters.length; i++) {
       if (i > 0) {
         stringBuilder.append(", ");
       }
