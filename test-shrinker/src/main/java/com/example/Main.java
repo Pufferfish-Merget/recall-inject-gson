@@ -1,6 +1,6 @@
 package com.example;
 
-import static com.example.TestExecutor.same;
+import static com.example.TestExecutor.same_renamed_5;
 
 import com.example.GenericClasses.DummyClass;
 import com.example.GenericClasses.GenericClass;
@@ -82,7 +82,7 @@ public class Main {
    * understanding that reflection is used for {@code obj}.
    */
   private static String toJson(Gson gson, Object obj) {
-    return gson.toJson(same(obj));
+    return gson.toJson(same_renamed_5(obj));
   }
 
   /**
@@ -90,7 +90,7 @@ public class Main {
    * understanding that reflection is used for {@code c}.
    */
   private static <T> T fromJson(Gson gson, String json, Class<T> c) {
-    return gson.fromJson(json, same(c));
+    return gson.fromJson(json, same_renamed_5(c));
   }
 
   private static void testNamedFields(BiConsumer<String, String> outputConsumer) {

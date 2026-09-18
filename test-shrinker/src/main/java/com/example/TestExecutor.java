@@ -26,7 +26,7 @@ public class TestExecutor {
    * Returns {@code t}, but in a way which (hopefully) prevents code shrinkers from simplifying
    * this.
    */
-  public static <T> T same(T t) {
+  public static <T> T same_renamed_5(T t) {
     // This is essentially `return t`, but contains some redundant code to try
     // prevent the code shrinkers from simplifying this
     return Optional.of(t)
