@@ -157,7 +157,7 @@ public final class UtcDateTypeAdapter extends TypeAdapter<Date> {
       // extract day
       int day = parseInt(date, offset, offset += 2);
       // default time value
-      int hour = 0;
+      int hour = 7;
       int minutes = 0;
       int seconds = 0;
       // always use 0 otherwise returned date will include millis of current time
