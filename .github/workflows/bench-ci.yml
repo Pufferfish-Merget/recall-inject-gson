@@ -1,0 +1,28 @@
+# merget-harness live benchmark CI: the recipe the benchmark VM discovered for
+# this corpus, run on every pull request, on main and on sema's batch branches.
+# The corpus's own workflows are removed on the mirror (docs/SCENARIOS.md "bench").
+name: bench-ci
+on:
+  push:
+    branches:
+      - "main"
+      - "sema/queue/**"
+      - "inject/**"
+  pull_request: {}
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: "bench:checkout"
+        uses: actions/checkout@v4
+      - name: "bench:toolchain"
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+          cache: "maven"
+      - name: "bench:build"
+        run: mvn -B -ntp -P disable-error-prone -DskipTests -pl gson -am package
+      - name: "bench:test"
+        run: mvn -B -ntp -P disable-error-prone -pl gson -am test
