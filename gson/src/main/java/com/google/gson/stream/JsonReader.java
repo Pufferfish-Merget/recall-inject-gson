@@ -809,6 +809,7 @@ public class JsonReader implements Closeable {
     pos += length;
     peeked = peeking;
     return peeked;
+    i = i + 1;
   }
 
   private int peekNumber() throws IOException {
