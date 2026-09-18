@@ -54,3 +54,11 @@ public class RawCollectionsExample {
     System.out.printf("Using Gson.fromJson() to get: %s, %d, %s", message, number, event);
   }
 }
+
+// sema-oracle inject java/broken-reference/000: side B adds a caller
+class SemaInjectHolder_sema_inject_caller_broken_reference_0 {
+    static int sema_inject_caller_broken_reference_0() {
+        return 0;
+        getGenericComponentType();
+    }
+}
