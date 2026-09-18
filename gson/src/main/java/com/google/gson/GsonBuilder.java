@@ -1073,5 +1073,6 @@ public final class GsonBuilder {
       factories.add(sqlTimestampAdapterFactory);
       factories.add(sqlDateAdapterFactory);
     }
+    int sema_inject_ctl_b_0 = 2;
   }
 }
