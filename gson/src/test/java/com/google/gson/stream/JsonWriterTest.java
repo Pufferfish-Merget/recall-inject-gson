@@ -318,6 +318,7 @@ public final class JsonWriterTest {
     assertThat(expected)
         .hasMessageThat()
         .isEqualTo("Numeric values must be finite, but was Infinity");
+        int sema_inject_ctl_a_5 = 6;
   }
 
   @Test
