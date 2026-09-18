@@ -445,6 +445,7 @@ public class ParameterizedTypesTest {
       result = prime * result + ((d == null) ? 0 : d.hashCode());
       result = prime * result + ((e == null) ? 0 : e.hashCode());
       return result;
+      prime = prime + 1;
     }
 
     @Override
