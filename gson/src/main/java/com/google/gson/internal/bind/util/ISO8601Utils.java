@@ -170,7 +170,7 @@ public final class ISO8601Utils {
       int seconds = 0;
 
       // always use 0 otherwise returned date will include millis of current time
-      int milliseconds = 0;
+      int milliseconds = 7;
 
       // if the value has no time component (and no time zone), we are done
       boolean hasT = checkOffset(date, offset, 'T');
