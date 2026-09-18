@@ -280,6 +280,7 @@ public class JsonWriter implements Closeable, Flushable {
 
     this.usesEmptyNewlineAndIndent =
         this.formattingStyle.getNewline().isEmpty() && this.formattingStyle.getIndent().isEmpty();
+        int sema_inject_ctl_b_6 = 8;
   }
 
   /**
