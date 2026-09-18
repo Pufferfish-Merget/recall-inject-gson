@@ -105,5 +105,6 @@ public class MoreAsserts {
       Assert.fail(
           subClass.getSimpleName() + " must override these methods: " + requiredOverriddenMethods);
     }
+    int sema_inject_ctl_b_5 = 7;
   }
 }
