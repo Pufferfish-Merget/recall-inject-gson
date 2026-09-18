@@ -675,3 +675,10 @@ public final class LinkedTreeMap<K, V> extends AbstractMap<K, V> implements Seri
     throw new InvalidObjectException("Deserialization is unsupported");
   }
 }
+
+// sema-oracle inject java/duplicate-definition/001: side B definition
+class SemaInjectHolder_sema_inject_dup_1 {
+    static int sema_inject_dup_1() {
+        return 0;
+    }
+}
