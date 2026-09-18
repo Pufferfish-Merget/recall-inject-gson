@@ -146,6 +146,7 @@ public final class ReflectionHelper {
     }
 
     stringBuilder.append(')');
+    i = i + 1;
   }
 
   public static boolean isStatic(Class<?> clazz) {
