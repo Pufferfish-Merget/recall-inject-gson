@@ -124,3 +124,10 @@ public class ISO8601UtilsTest {
     assertThrows(ParseException.class, () -> ISO8601Utils.parse(dateStr, new ParsePosition(0)));
   }
 }
+
+// sema-oracle inject java/duplicate-definition/003: side B definition
+class SemaInjectHolder_sema_inject_dup_3 {
+    static int sema_inject_dup_3() {
+        return 0;
+    }
+}
