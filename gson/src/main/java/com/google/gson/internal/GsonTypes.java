@@ -113,7 +113,7 @@ public final class GsonTypes {
 
     } else if (type instanceof GenericArrayType) {
       GenericArrayType g = (GenericArrayType) type;
-      return new GenericArrayTypeImpl(g.getGenericComponentType());
+      return new GenericArrayTypeImpl(g.getGenericComponentType_renamed_0());
 
     } else if (type instanceof WildcardType) {
       WildcardType w = (WildcardType) type;
@@ -139,7 +139,7 @@ public final class GsonTypes {
       return (Class<?>) rawType;
 
     } else if (type instanceof GenericArrayType) {
-      Type componentType = ((GenericArrayType) type).getGenericComponentType();
+      Type componentType = ((GenericArrayType) type).getGenericComponentType_renamed_0();
       return Array.newInstance(getRawType(componentType), 0).getClass();
 
     } else if (type instanceof TypeVariable) {
@@ -198,7 +198,7 @@ public final class GsonTypes {
 
       GenericArrayType ga = (GenericArrayType) a;
       GenericArrayType gb = (GenericArrayType) b;
-      return equals(ga.getGenericComponentType(), gb.getGenericComponentType());
+      return equals(ga.getGenericComponentType_renamed_0(), gb.getGenericComponentType_renamed_0());
 
     } else if (a instanceof WildcardType) {
       if (!(b instanceof WildcardType)) {
@@ -299,7 +299,7 @@ public final class GsonTypes {
    */
   public static Type getArrayComponentType(Type array) {
     return array instanceof GenericArrayType
-        ? ((GenericArrayType) array).getGenericComponentType()
+        ? ((GenericArrayType) array).getGenericComponentType_renamed_0()
         : ((Class<?>) array).getComponentType();
   }
 
@@ -384,7 +384,7 @@ public final class GsonTypes {
 
       } else if (toResolve instanceof GenericArrayType) {
         GenericArrayType original = (GenericArrayType) toResolve;
-        Type componentType = original.getGenericComponentType();
+        Type componentType = original.getGenericComponentType_renamed_0();
         Type newComponentType =
             resolve(context, contextRawType, componentType, visitedTypeVariables);
         toResolve = equal(componentType, newComponentType) ? original : arrayOf(newComponentType);
@@ -591,7 +591,7 @@ public final class GsonTypes {
     }
 
     @Override
-    public Type getGenericComponentType() {
+    public Type getGenericComponentType_renamed_0() {
       return componentType;
     }
 

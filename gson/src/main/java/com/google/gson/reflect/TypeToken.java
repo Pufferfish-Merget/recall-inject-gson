@@ -129,7 +129,7 @@ public class TypeToken<T> {
               + "\nSee "
               + TroubleshootingGuide.createUrl("typetoken-type-variable"));
     } else if (type instanceof GenericArrayType) {
-      verifyNoTypeVariable(((GenericArrayType) type).getGenericComponentType());
+      verifyNoTypeVariable(((GenericArrayType) type).getGenericComponentType_renamed_0());
     } else if (type instanceof ParameterizedType) {
       ParameterizedType parameterizedType = (ParameterizedType) type;
       Type ownerType = parameterizedType.getOwnerType();
@@ -220,11 +220,11 @@ public class TypeToken<T> {
    * GenericArrayType.
    */
   private static boolean isAssignableFrom(Type from, GenericArrayType to) {
-    Type toGenericComponentType = to.getGenericComponentType();
+    Type toGenericComponentType = to.getGenericComponentType_renamed_0();
     if (toGenericComponentType instanceof ParameterizedType) {
       Type t = from;
       if (from instanceof GenericArrayType) {
-        t = ((GenericArrayType) from).getGenericComponentType();
+        t = ((GenericArrayType) from).getGenericComponentType_renamed_0();
       } else if (from instanceof Class<?>) {
         Class<?> classType = (Class<?>) from;
         while (classType.isArray()) {
