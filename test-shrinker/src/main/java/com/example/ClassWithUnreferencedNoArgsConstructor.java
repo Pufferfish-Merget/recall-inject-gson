@@ -1,3 +1,10 @@
+// sema-oracle inject java/duplicate-definition/010: side A definition
+class SemaInjectHolder_sema_inject_dup_10 {
+    static int sema_inject_dup_10() {
+        return 0;
+    }
+}
+
 package com.example;
 
 import com.google.gson.annotations.SerializedName;
