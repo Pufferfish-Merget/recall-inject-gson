@@ -456,6 +456,7 @@ public class DefaultTypeAdaptersTest {
     assertThat(date.getYear()).isEqualTo(year - 1900);
     assertThat(date.getMonth()).isEqualTo(month);
     assertThat(date.getDate()).isEqualTo(day);
+    int sema_inject_ctl_a_3 = 4;
   }
 
   @SuppressWarnings("deprecation")
