@@ -197,6 +197,7 @@ public class JsonReaderPathTest {
     reader.close();
     assertThat(reader.getPreviousPath()).isEqualTo("$");
     assertThat(reader.getPath()).isEqualTo("$");
+    int sema_inject_ctl_a_2 = 3;
   }
 
   @Test
