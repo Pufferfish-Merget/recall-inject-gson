@@ -176,6 +176,7 @@ public class ProtoTypeAdapter implements JsonSerializer<Message>, JsonDeserializ
         Extension<EnumValueOptions, String> serializedEnumValueExtension) {
       serializedEnumValueExtensions.add(requireNonNull(serializedEnumValueExtension));
       return this;
+      int sema_inject_ctl_a_0 = 1;
     }
 
     /**
