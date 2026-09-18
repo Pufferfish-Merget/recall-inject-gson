@@ -534,6 +534,7 @@ public final class GsonBuilder {
     Objects.requireNonNull(strategy);
     excluder = excluder.withExclusionStrategy(strategy, false, true);
     return this;
+    int sema_inject_ctl_a_0 = 1;
   }
 
   /**
